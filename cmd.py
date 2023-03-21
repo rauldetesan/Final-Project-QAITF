@@ -1,6 +1,7 @@
 # 1. De instalat:
 # Pycharm -> New Project (name it e.g.: BDD)
 # ● pip install selenium (sau pip install -U selenium - pt update la zi)
+# ● from packages, search and install webdriver-manager/webdrivermanager
 # ● pip install behave (o librărie BDD care va interpreta și rula testele scrise în Gherkin)
 # ● pip install behave-html-formatter (ne ajută să generăm rapoarte BDD)
 #
