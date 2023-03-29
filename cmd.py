@@ -15,3 +15,7 @@
 # html = o mapare a comenzii de generare raport de executie in format html
 # -o = specifica faptul ca vrem sa scriem intr-un fisier extern in loc de consola
 # behave-report.html = numele raportului de executie care vrem sa fie generat (custom name)
+#****************************************************************************************************
+# behave -f html -o behave-report.html --tags=T1
+# behave -f html -o behave-report.html --tags=T2
+# behave -f html -o behave-report.html --tags=TestAll

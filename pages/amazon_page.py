@@ -7,8 +7,7 @@ class Page(Base_page):
     SEARCH_TEXTBOX = (By.ID, "twotabsearchtextbox")
     SEARCH_BUTTON = (By.ID, "nav-search-submit-button")
     SEARCH_CATEGORIES = (By.ID, "searchDropdownBox")
-    FILTER_DEPARTMENT = (By.ID, "n/2811119011")
-    FILTER_BRANDS = (By.ID, "p_89/SAMSUNG")
+    FILTER_DEPARTMENT = (By.ID, "n-title")
     FILTER_PRICE = (By.ID, "p_36/1253507011")
     FILTER_REVIEW = (By.ID, "p_72/1248879011")
     SELECT_CONDITION = (By.ID, "p_n_condition-type/2224371011")
@@ -17,21 +16,18 @@ class Page(Base_page):
     def navigate_to_homepage(self):
         self.chrome.get("https://www.amazon.com/ref=nav_logo")
 
-    def insert_search_value(self):
-        self.chrome.find_element(*self.SEARCH_TEXTBOX).send_keys("samsung")
+    def insert_search_value(self, product_name):
+        self.chrome.find_element(*self.SEARCH_TEXTBOX).send_keys(product_name)
 
-    def choose_category(self):
+    def choose_category(self, category_name):
         category_dropdown = Select(self.chrome.find_element(*self.SEARCH_CATEGORIES))
-        category_dropdown.select_by_visible_text("Electronics")
+        category_dropdown.select_by_visible_text(category_name)
 
     def click_search_button(self):
         self.chrome.find_element(*self.SEARCH_BUTTON).click()
 
-    def select_filter_department(self):
+    def select_filter_department(self, department_filter):
         self.wait_and_click_element(*self.FILTER_DEPARTMENT)
-
-    def select_filter_brands(self):
-        self.wait_and_click_element(*self.FILTER_BRANDS)
 
     def select_filter_price(self):
         self.wait_and_click_element(*self.FILTER_PRICE)

@@ -1,44 +1,54 @@
 from behave import *
 
+
 @given("Home page: I am on amazon homepage")
 def step_impl(context):
     context.home_page_object.navigate_to_homepage()
 
-@when("Home page: I search for samsung from Electronics")
-def step_impl(context):
-    context.home_page_object.insert_search_value()
-    context.home_page_object.choose_category()
+
+@when('Home page: I search for "{product_name}" from "{category_name}"')
+def step_impl(context, product_name, category_name):
+    context.home_page_object.insert_search_value(product_name)
+    context.home_page_object.choose_category(category_name)
     context.home_page_object.click_search_button()
 
-@when("Results page: I am on results page")
 
+@when('Results page: I select "{department_filter}"')
+def step_impl(context, department_filter):
+    context.home_page_object.select_filter_department(department_filter)
 
-@when("Results page: I select Cell Phones & Accessories")
-def step_impl(context):
-    context.home_page_object.select_filter_department()
-
-@when("Results page: I click SAMSUNG on Featured Brands")
-def step_impl(context):
-    context.home_page_object.select_filter_brands()
 
 @when("Results page: I select $200 & Above from Price")
 def step_impl(context):
     context.home_page_object.select_filter_price()
 
+
 @when("Results page: I select on Avg. Customer Review four stars & Up")
 def step_impl(context):
     context.home_page_object.select_filter_review()
+
 
 @when("Results page: I select condition New")
 def step_impl(context):
     context.home_page_object.select_condition()
 
+
 @when("Results page: I select Availability")
 def step_impl(context):
     context.home_page_object.select_availability()
+
 
 @then("Results page: I navigate back to homepage")
 def step_impl(context):
     context.home_page_object.navigate_back_to_homepage()
 
+@when("Home page: I search for samsung from Electronics")
+def step_impl(context):
+    context.home_page_object.insert_search_value("samsung")
+    context.home_page_object.choose_category("Electronics")
+    context.home_page_object.click_search_button()
+
+@when("Results page: I select Cell Phones & Accessories")
+def step_impl(context):
+    context.home_page_object.select_filter_department("Cell Phones & Accessories")
 
