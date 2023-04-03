@@ -18,4 +18,14 @@
 #****************************************************************************************************
 # behave -f html -o behave-report.html --tags=T1
 # behave -f html -o behave-report.html --tags=T2
+# behave -f html -o behave-report.html --tags=T3
+# behave -f html -o behave-report.html --tags=T4
+# behave -f html -o behave-report.html --tags=T5
+# behave -f html -o behave-report.html --tags=T6
+# behave -f html -o behave-report.html --tags=T7
+# behave -f html -o behave-report.html --tags=T8
+# behave -f html -o behave-report.html --tags=T9
+# behave -f html -o behave-report.html --tags=T10
+# behave -f html -o behave-report.html --tags=T11
+# behave -f html -o behave-report.html --tags=T12
 # behave -f html -o behave-report.html --tags=TestAll

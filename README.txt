@@ -13,5 +13,15 @@
 # Testarea cu generarea raportului se ruleaza din terminal folosind comanda:
 # behave -f html -o behave-report.html --tags=TestAll (pentru a genera raportul tuturor scenariilor)
 # behave -f html -o behave-report.html --tags=T1 (pentru generarea raportului Scenario Outline)
-# behave -f html -o behave-report.html --tags=T2 (pentru generarea raportului Scenario)
+# behave -f html -o behave-report.html --tags=T2 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T3 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T4 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T5 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T6 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T7 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T8 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T9 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T10 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T11 (pentru generarea raportului Scenario specific)
+# behave -f html -o behave-report.html --tags=T12 (pentru generarea raportului Scenario specific)
 # Accesarea raportului se face cu, click dreapta pe raport, apoi Open In > Browser > Chrome

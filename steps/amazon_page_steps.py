@@ -52,3 +52,69 @@ def step_impl(context):
 def step_impl(context):
     context.home_page_object.select_filter_department("Cell Phones & Accessories")
 
+@when("Home page: I search for huawei from Electronics")
+def step_impl(context):
+    context.home_page_object.insert_search_value("huawei")
+    context.home_page_object.choose_category("Electronics")
+    context.home_page_object.click_search_button()
+
+@when("Home page: I search for oppo from Electronics")
+def step_impl(context):
+    context.home_page_object.insert_search_value("oppo")
+    context.home_page_object.choose_category("Electronics")
+    context.home_page_object.click_search_button()
+
+@when("Home page: I search for keyboard from Computers")
+def step_impl(context):
+    context.home_page_object.insert_search_value("keyboard")
+    context.home_page_object.choose_category("Computers")
+    context.home_page_object.click_search_button()
+
+@when("Results page: I select Monitors")
+def step_impl(context):
+    context.home_page_object.select_filter_department("Monitors")
+
+@when("Home page: I search for TV from Computers")
+def step_impl(context):
+    context.home_page_object.insert_search_value("TV")
+    context.home_page_object.choose_category("Computers")
+    context.home_page_object.click_search_button()
+
+@when("Home page: I search for monitor from Computers")
+def step_impl(context):
+    context.home_page_object.insert_search_value("monitor")
+    context.home_page_object.choose_category("Computers")
+    context.home_page_object.click_search_button()
+
+@when("Home page: I search for men smartwatch from All Departments")
+def step_impl(context):
+    context.home_page_object.insert_search_value("men smartwatch")
+    context.home_page_object.choose_category("All Departments")
+    context.home_page_object.click_search_button()
+
+@when("Results page: I select Wearable Technology")
+def step_impl(context):
+    context.home_page_object.select_filter_department("Wearable Technology")
+
+@when("Home page: I search for women smartwatch from All Departments")
+def step_impl(context):
+    context.home_page_object.insert_search_value("women smartwatch")
+    context.home_page_object.choose_category("All Departments")
+    context.home_page_object.click_search_button()
+
+@when("Home page: I search for unisex smartwatch from All Departments")
+def step_impl(context):
+    context.home_page_object.insert_search_value("unisex smartwatch")
+    context.home_page_object.choose_category("All Departments")
+    context.home_page_object.click_search_button()
+
+@when("Home page: I search for smartwatch from All Departments")
+def step_impl(context):
+    context.home_page_object.insert_search_value("smartwatch")
+    context.home_page_object.choose_category("All Departments")
+    context.home_page_object.click_search_button()
+
+
+
+
+
